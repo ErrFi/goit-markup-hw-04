@@ -223,6 +223,10 @@
   color: var(--active-1);
   border-bottom: 4px solid var(--active-1);
 }
+.navigation .current {
+  color: var(--active-1);
+  border-bottom: 4px solid var(--active-1);
+}
 
 .contacts .icon {
   width: 16px;

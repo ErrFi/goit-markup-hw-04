@@ -4,6 +4,145 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio-Portfolio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- header & navigation -->
+    <!-- верхній рядок з навігацією -->
+    <header class="header">
+      <div class="header-wrap">
+        <div class="flex-wrap">
+          <a class="logo max-height" href="./index.html">
+            <span class="logo-text0">Web</span>
+            <span class="logo-text1">Studio</span>
+          </a>
+          <ul class="list max-height navigation">
+            <li class="list-item max-height">
+              <a class="max-height link" href="./index.html">
+                <span>Студия</span>
+              </a>
+            </li>
+            <li class="list-item max-height">
+              <a class="max-height link current" href="./index.html">
+                <span>Портфолио</span>
+              </a>
+            </li>
+            <li class="list-item max-height">
+              <a class="max-height link" href="./index.html">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list max-height contacts">
+            <li class="list-item max-height">
+              <a class="max-height link" href="./index.html">
+                <svg class="icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#envelope"
+                  ></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+            <li class="list-item max-height">
+              <a class="max-height link" href="./index.html">
+                <svg class="icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#smartphone"
+                  ></use>
+                </svg>
+                <span class="text"> +38 096 111 11 11 </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- ===== footer: contacts, social links & subscribe ====== -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <address class="footer-item footer-addr-wrapper">
+          <ul class="footer-addr">
+            <!-- logo -->
+            <li class="addr-item">
+              <a class="logo" href="./index.html">
+                <span class="logo-text0">Web</span>
+                <span class="logo-text2">Studio</span>
+              </a>
+            </li>
+            <!-- address -->
+            <li class="addr-item">
+              <a class="footer-link" href="./index.html">
+                <span class="addr-text">г. Киев, пр-т Леси Украинки, 26</span>
+              </a>
+            </li>
+            <!-- e-mail -->
+            <li class="addr-item">
+              <a class="footer-link" href="./index.html">
+                <span class="addr-text">info@example.com</span>
+              </a>
+            </li>
+            <!-- phone -->
+            <li class="addr-item">
+              <a class="footer-link" href="./index.html">
+                <span class="addr-text">+38 099 111 11 11</span>
+              </a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer-item footer-social">
+          <h3 class="h3">присоединяйтесь</h3>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="#" class="footer-social-link social-link">
+                <svg class="social-icon footer-icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="footer-social-link social-link">
+                <svg class="social-icon footer-icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="footer-social-link social-link">
+                <svg class="social-icon footer-icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="footer-social-link social-link">
+                <svg class="social-icon footer-icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item footer-subscribe">
+          <h3 class="h3">Подпишитесь на рассылку</h3>
+          <div class="footer-input-wrap">
+            <span>E-mail</span>
+          </div>
+          <div class="footer-button-wrap">
+            <span>Подписаться</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
