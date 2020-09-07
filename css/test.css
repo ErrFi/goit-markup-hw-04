@@ -1,1 +1,154 @@
+.portfolio {
+  background-color: #ffffff;
+}
+.portfolio-wrap {
+  width: 1600px;
+  margin: auto;
+  padding: 94px 215px;
+  outline: 2px dashed green;
+}
+.project-selector {
+  outline: 2px dashed green;
+}
+.selector-item {
+  outline: 2px dashed green;
+}
+.selector-link {
+  outline: 2px dashed green;
+}
 
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-item {
+  width: calc((100% -30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.grid-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0px;
+  outline: 2px dashed green;
+}
+.galery-item {
+  position: relative;
+  overflow: hidden;
+  width: calc(((100% - 30px * 2) / 3));
+  height: 404px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: #ffffff; */
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.galery-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.galery-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.galery-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.item-description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 24px;
+}
+.galery .h3 {
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.galery p.text {
+  margin: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatex(-100%);
+  /* transition: transform 250ms ease; */
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  /* margin-bottom: 20px; */
+  background: rgba(33, 150, 243, 0.9);
+  outline: 2px dashed red;
+}
+.overlay p {
+  margin: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.galery-item:hover .overlay {
+  transform: translatex(0);
+}
+
+/* ================================== */
+.galery-item:nth-child(1) {
+  background-image: url("../images/portfolio/Technokryak.jpg");
+}
+.galery-item:nth-child(2) {
+  background-image: url("../images/portfolio/NewOrlean-vs-GoldenStar.jpg");
+}
+.galery-item:nth-child(3) {
+  background-image: url("../images/portfolio/Seafood.jpg");
+}
+.galery-item:nth-child(4) {
+  background-image: url("../images/portfolio/Project-Prime.jpg");
+}
+.galery-item:nth-child(5) {
+  background-image: url("../images/portfolio/Project-Boxes.jpg");
+}
+.galery-item:nth-child(6) {
+  background-image: url("../images/portfolio/Inspiration-has-no-Borders.jpg");
+}
+.galery-item:nth-child(7) {
+  background-image: url("../images/portfolio/Limited-Edition.jpg");
+}
+.galery-item:nth-child(8) {
+  background-image: url("../images/portfolio/Project-LAB.jpg");
+}
+.galery-item:nth-child(9) {
+  background-image: url("../images/portfolio/Growing-Business.jpg");
+}
