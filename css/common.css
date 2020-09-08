@@ -241,7 +241,7 @@
   /* height: 370px; */
   background-color: #2f303a;
 }
-.footer-wrapper {
+.footer > .container {
   display: flex;
   /* background-color: darkgrey; */
   /* border: 1px solid green; */
@@ -255,7 +255,7 @@
 .footer-item {
   display: inline-block;
 }
-.footer-addr-wrapper {
+.footer-addr-container {
   margin-right: 70px;
 
   font-size: 0px;
