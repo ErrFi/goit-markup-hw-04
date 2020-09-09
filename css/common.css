@@ -203,7 +203,8 @@
   /* flex-wrap: wrap; */
   margin: auto 0px;
   padding: 0px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
+  padding-top: 8px;
   /* outline: 1px solid blue; */
 
   justify-content: center;
@@ -229,11 +230,12 @@
   display: flex;
   /* position: relative; */
   width: auto;
-  height: 38px;
+  /* height: 38px; */
   margin: auto;
-  padding: 8px 0px;
+  padding: 0px;
   background: transparent;
-  align-content: center;
+  /* align-content: center; */
+  align-items: center;
   border-radius: 4px;
   color: var(--text-grey);
   fill: var(--text-grey);
