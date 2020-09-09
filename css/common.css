@@ -194,16 +194,76 @@
 
   color: var(--text-dark);
 }
-.contacts {
+/* ==== new ==== */
+.header .contacts-list {
+  display: flex;
+  /* без переносу на наступний рядок */
+  flex-wrap: nowrap;
+  /* перенос на інший рядок */
+  /* flex-wrap: wrap; */
+  margin: 0px auto;
+  padding: 0px;
+  /* outline: 1px solid blue; */
+
+  justify-content: center;
+}
+.header .contacts-item {
+  display: block;
+
+  list-style: none;
+  /* width: calc((100% - 30px * 2) / 3); */
+
+  margin-right: 8px;
+  margin-bottom: 0px;
+  justify-content: center;
+  background: transparent;
+  /* border-radius: 4px; */
+  /* outline: 1px solid red; */
+}
+.header .contacts-item .link,
+.header .contacts-item .link:visited {
+  display: flex;
+  /* position: relative; */
+  width: auto;
+  height: 38px;
+  margin: auto;
+  padding: 6px 22px;
+  background: transparent;
+  border-radius: 4px;
+  color: var(--text-grey);
+  fill: var(--text-grey);
+}
+
+.header .contacts-item .icon {
+  width: 16px;
+  height: 16px;
+  margin: auto 0px;
+  margin-right: 10px;
+  text-align: center;
+  /* fill: var(--text-grey); */
+}
+.header .contacts-item .text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
 
-  color: var(--text-grey);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* color: inherit; */
 }
+.header .contacts-item .link:hover,
+.header .contacts-item .link:focus,
+.header .contacts-item .link:active {
+  color: var(--active-1);
+  fill: var(--active-1);
+}
+
+/* ==================== */
+
 .link:visited {
   color: inherit;
 }
@@ -228,11 +288,6 @@
   border-bottom: 4px solid var(--active-1);
 }
 
-.contacts .icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
 /* ====== footer decoration ======= */
 .footer {
   display: block;
