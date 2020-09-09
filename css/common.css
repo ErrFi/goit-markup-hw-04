@@ -201,8 +201,9 @@
   flex-wrap: nowrap;
   /* перенос на інший рядок */
   /* flex-wrap: wrap; */
-  margin: 0px auto;
+  margin: auto 0px;
   padding: 0px;
+  padding-bottom: 24px;
   /* outline: 1px solid blue; */
 
   justify-content: center;
@@ -213,12 +214,15 @@
   list-style: none;
   /* width: calc((100% - 30px * 2) / 3); */
 
-  margin-right: 8px;
-  margin-bottom: 0px;
+  /* margin-right: 8px;
+  margin-bottom: 0px; */
   justify-content: center;
   background: transparent;
   /* border-radius: 4px; */
   /* outline: 1px solid red; */
+}
+.header .contacts-item:not(:last-child) {
+  margin-right: 30px;
 }
 .header .contacts-item .link,
 .header .contacts-item .link:visited {
@@ -227,7 +231,7 @@
   width: auto;
   height: 38px;
   margin: auto;
-  padding: 6px 22px;
+  padding: 8px 0px;
   background: transparent;
   border-radius: 4px;
   color: var(--text-grey);
